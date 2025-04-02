@@ -63,7 +63,7 @@ const getStatusClass = (status) => {
 
 const VehicleDocumentsTable = () => {
   return (
-    <div className="w-full bg-[#010101ad] border-1 rounded-lg p-6">
+    <div className="w-full bg-[#010101ad] text-[#ccfacf] border-1 rounded-lg p-6">
       <h2 className="text-[26px] font-semibold">Vehicle Documents</h2>
       <span className="text-sm text-[#ffffff6c]">
       Manage vehicle registration, insurance, and other documents
@@ -96,9 +96,9 @@ const VehicleDocumentsTable = () => {
                 {doc.status}
               </td>
               <td className="px-4 py-4 text-right">
-                <button className="text-blue-500 hover:underline">View</button>
+                <button className="hover:bg-[#ffffff1d] p-2 px-3 rounded-lg cursor-pointer">View</button>
                 {doc.status === 'Expired' && (
-                  <button className="ml-2 text-white bg-black px-2 py-1 rounded hover:bg-gray-800">
+                  <button className=" border ml-2 border-[#ffffff1d] hover:bg-[#ffffff1d] p-2 px-3 rounded-lg cursor-pointer">
                     Renew
                   </button>
                 )}

@@ -52,14 +52,14 @@ const Finance = () => {
       <div className="flex justify-between">
         <h1 className="text-4xl font-bold">Financial Management</h1>
         <div className="flex justify-center items-center gap-3">
-          <div className="bg-white text-black px-4 py-2 rounded-lg flex justify-center items-center gap-2">
+          <div className="bg-white text-black px-4 py-2 rounded-lg flex justify-center items-center gap-2 cursor-pointer">
             {" "}
             <div className="text-xl">
               <LiaFileInvoiceSolid />
             </div>
             Generate Invoice
           </div>
-          <div className="bg-[#010101ad] text-white border rounded-lg border-[#ffffff1c] px-4 py-2 flex justify-center items-center gap-2">
+          <div className="bg-[#010101ad] text-white border rounded-lg border-[#ffffff1c] px-4 py-2 flex justify-center items-center gap-2 cursor-pointer">
             <MdOutlineFileDownload /> <div className="text-xl"></div> Export
             Report
           </div>

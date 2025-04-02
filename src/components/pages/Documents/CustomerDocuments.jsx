@@ -101,11 +101,11 @@ const CustomerDocuments = () => {
                 </span>
               </td>
               <td className="px-2 py-4 text-right">
-                <button className="hover:bg-[#ffffff1d] p-2 px-3 rounded-lg">
+                <button className="hover:bg-[#ffffff1d] p-2 px-3 rounded-lg cursor-pointer">
                   View
                 </button>
                 {doc.status === "Pending" && (
-                  <button className=" border ml-2 border-[#ffffff1d] hover:bg-[#ffffff1d] p-2 px-3 rounded-lg">
+                  <button className=" border ml-2 border-[#ffffff1d] hover:bg-[#ffffff1d] p-2 px-3 rounded-lg cursor-pointer">
                     Verify
                   </button>
                 )}

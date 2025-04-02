@@ -5,6 +5,8 @@ import { PiCarProfileLight } from "react-icons/pi";
 import { BsPeople } from "react-icons/bs";
 import { Overview } from "./overflow";
 import { VehicleStatus } from "./vehicle-status";
+import RecentRental from "./Recent-Rental";
+import UpcomingExpiration from "./upcoming-experition";
 
 const Dashboard = () => {
   return (
@@ -82,18 +84,21 @@ const Dashboard = () => {
       </div>
 
       <div className="flex flex-row justify-between gap-5 my-5">
-        <div className="flex-3 bg-[#010101ad] border-1 rounded-lg h-200 p-6">
-          <h2 className="text-3xl font-semibold">Recent Rentals</h2>
-          <span className="text-[#ffffff6c]">
+        <div className="flex-3 bg-[#010101ad] border-1 rounded-lg p-6">
+          <h2 className="text-[26px] font-semibold">Recent Rentals</h2>
+          <span className="text-sm text-[#ffffff6c]">
             Recent vehicle rentals and their status
           </span>
+          <div><RecentRental/></div>
         </div>
-        <div className=" flex-2 bg-[#010101ad] border-1 rounded-lg h-200 p-6">
-          <h2 className="text-3xl font-semibold">Upcoming Expirations</h2>
-          <span className="text-[#ffffff6c]">
+        <div className=" flex-2 bg-[#010101ad] border-1 rounded-lg p-6">
+          <h2 className="text-[26px] font-semibold">Upcoming Expirations</h2>
+          <span className="text-sm text-[#ffffff6c]">
             Documents and permits that need attention
           </span>
-          <div></div>
+          <div>
+          <UpcomingExpiration/>
+          </div>
         </div>
       </div>
 
