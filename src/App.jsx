@@ -4,7 +4,7 @@ import MainNav from './components/main_nav';
 // import Home from './pages/Home';
 // import About from './pages/About';
 import './App.css';
-import Dashboard from './components/pages/Dashboard';
+import Dashboard from './components/pages/Dashboard/Dashboard';
 import Rentals from './components/pages/Rentals';
 import Settings from './components/pages/Settings/Settings';
 import Vehicles from './components/pages/Vehicles';

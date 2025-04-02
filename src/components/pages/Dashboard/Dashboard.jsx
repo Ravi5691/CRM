@@ -3,6 +3,8 @@ import { LiaFileInvoiceSolid } from "react-icons/lia";
 import { FiDollarSign } from "react-icons/fi";
 import { PiCarProfileLight } from "react-icons/pi";
 import { BsPeople } from "react-icons/bs";
+import { Overview } from "./overflow";
+import { VehicleStatus } from "./vehicle-status";
 
 const Dashboard = () => {
   return (
@@ -59,18 +61,23 @@ const Dashboard = () => {
       </div>
 
       <div className="flex flex-row justify-between gap-5">
-        <div className="flex-3 bg-[#010101ad] border-1 rounded-lg h-120 p-6">
-          <h2 className="text-3xl font-semibold">Revenue Overview</h2>
+        <div className="flex-3 bg-[#010101ad] border-1 rounded-lg p-6">
+          <h2 className="text-[26px] font-semibold">Revenue Overview</h2>
           {/* <span className="text-[#ffffff6c]">
             Monthly revenue and expenses
           </span> */}
+          <div className="">
+          <Overview/>
+          </div>
         </div>
-        <div className=" flex-2 bg-[#010101ad] border-1 rounded-lg h-120 p-6">
-          <h2 className="text-3xl font-semibold">Vehicle Status</h2>
-          <span className="text-[#ffffff6c]">
+        <div className=" flex-2 bg-[#010101ad] border-1 rounded-lg p-6">
+          <h2 className="text-[26px] font-semibold">Vehicle Status</h2>
+          <span className="text-[#ffffff6c] text-sm">
             Current status of your vehicle fleet
           </span>
-          <div></div>
+          <div>
+            <VehicleStatus/>
+          </div>
         </div>
       </div>
 
