@@ -17,12 +17,12 @@ const MainNav = () => {
   ];
 
   return (
-    <nav className="flex items-center text-[#e8e7e7] bg-[#0f0f0f] space-x-4 lg:space-x-6 py-6 px-5 border-b ">
+    <nav className="flex items-center text-[#e8e7e78f] bg-[#0f0f0f] space-x-4 lg:space-x-6 py-6 px-5 border-b ">
       {routes.map((route) => (
         <Link
           key={route.href}
           to={route.href}
-          className={`flex items-center text-sm font-medium transition-colors hover:text-primary ${route.active ? "text-primary" : "text-muted-foreground"}`}
+          className={`flex items-center text-sm font-medium transition-colors hover:text-primary ${route.active ? "text-white" : "text-muted-foreground"}`}
         >
           <route.icon className="mr-2 h-4 w-4" />
           <span className="hidden md:inline-block">{route.label}</span>
