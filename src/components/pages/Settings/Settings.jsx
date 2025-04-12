@@ -14,7 +14,7 @@ const Settings = () => {
   };
 
   return (
-    <div className="flex flex-col p-10 h-screen bg-[#0f0f0f] text-white">
+    <div className="flex flex-col p-10 min-h-screen bg-[#0f0f0f] text-white">
       <h1 className="text-4xl font-bold">Settings</h1>
       <div className="w-full h-12 rounded-lg my-5 flex justify-between p-1 bg-[#252525]">
         <div
