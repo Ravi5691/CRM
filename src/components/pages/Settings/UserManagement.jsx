@@ -161,7 +161,7 @@ const UserManagement = () => {
             ))}
           </tbody>
         </table>
-        <button className="bg-white flex gap-2 items-center text-black p-2 rounded-lg mt-4">
+        <button className="bg-white flex gap-2 items-center text-black p-2 rounded-lg mt-5">
           <FiSave />
           Save Permissions
         </button>
